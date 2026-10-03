@@ -2,7 +2,7 @@
 
 -- 1. Give everyone in Sales a 10% raise.
 UPDATE employees
-SET salary = salary * 1.10
+SET salary = ROUND(salary * 1.10, 2)
 WHERE department = 'Sales';
 
 -- 2. Remove everyone in the Temporary department.
